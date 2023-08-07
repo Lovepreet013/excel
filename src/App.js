@@ -41,7 +41,7 @@ const Data = () => {
   return (
     <>
     <Main/>
-    <div>
+    <div className="app">
         <form className='main'>
             <input
                 type="file"

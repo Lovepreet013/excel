@@ -21,12 +21,14 @@ code {
   font-size: 18px;
   border: 1px solid grey;
   border-radius: 5px;
+  animation: onLoad 1s linear ;
 }
 
 #upload{
   margin:10px 100px;
   padding: 10px 0px;
   font-size: 20px;
+  animation: onLoad 1s linear ;
 }
 .items{
   width: 95%;
@@ -35,10 +37,25 @@ code {
 .svg{
   position: absolute;
   top:150px;
-  right: 30%;
+  right: 40%;
+  animation: onLoad 1s linear ;
+}
+.hero div{
+  animation: onLoad 1s linear ;
 }
 @media screen and (max-width: 1268px) {
   .svg{
     display: none;
+  }
+}
+
+@keyframes onLoad {
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
